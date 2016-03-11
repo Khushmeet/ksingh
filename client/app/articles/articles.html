@@ -1,14 +1,18 @@
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <div ng-repeat="article in articles">
-        <div>
-          <h2>{{article.title}}</h2>
-          <p>
-            {{article.content}}
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<md-content class="md-padding" layout-xs="column" layout="column" layout-fill >
+   <div flex-xs flex-gt-xs="50" layout="column" layout-align="space-between center">
+     <md-card flex="none" ng-repeat="article in articles">
+       <img ng-src="assets/images/elementary_logo.png" id="card_image" class="md-card-image" alt="Washed Out">
+       <md-card-title>
+         <md-card-title-text>
+           <span class="md-headline">{{article.title}}</span>
+         </md-card-title-text>
+       </md-card-title>
+       <md-card-content>
+         {{article.intro}}
+       </md-card-content>
+       <md-card-actions layout="row" layout-align="end center">
+         <md-button>Read More</md-button>
+       </md-card-actions>
+     </md-card>
+   </div>
+</md-content>

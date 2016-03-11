@@ -17,6 +17,7 @@ Article.find({}).removeAsync()
       'author': 'Khushmeet Singh',
       'date': date.getDate(),
       'content': '<h2>This is the article about Yeoman Generator</h2><p>This is the paragraph about using Angular-Fullstack and creating a beautiful website using MEAN Stack</p>',
+      'intro':'This is the intro to Using Yeoman Generator. And how to scaffold the code',
       'tags': [
         'Yeoman',
         'Angular-Fullstack',
@@ -29,6 +30,7 @@ Article.find({}).removeAsync()
       'author': 'Khushmeet Singh',
       'date': date.getDate(),
       'content': '<h2>This is the article about Elementary OS</h2><p>This is the paragraph about using Elementary OS and about its User Interface of Pantheon Desktop environemnt</p>',
+      'intro':'This is the introduction to using Elementary OS. Linux distro built using ubuntu and deeper debian',
       'tags': [
         'Elementary',
         'Linux'

@@ -9,6 +9,7 @@ var ArticleSchema = new mongoose.Schema({
   author: String,
   date: Date,
   imageId:Schema.ObjectId,
+  intro:String,
   content:String,
   tags:[String]
 });
