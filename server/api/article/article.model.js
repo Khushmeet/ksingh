@@ -2,10 +2,15 @@
 
 var mongoose = require('bluebird').promisifyAll(require('mongoose'));
 
+var Schema = mongoose.Schema;
+
 var ArticleSchema = new mongoose.Schema({
-  name: String,
-  info: String,
-  active: Boolean
+  title: String,
+  author: String,
+  date: Date,
+  imageId:Schema.ObjectId,
+  content:String,
+  tags:[String]
 });
 
 export default mongoose.model('Article', ArticleSchema);
