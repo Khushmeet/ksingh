@@ -1,17 +1,17 @@
 <md-content class="md-padding" layout-xs="column" layout="column" layout-fill >
    <div flex-xs flex-gt-xs="50" layout="column" layout-align="space-between center">
-     <md-card flex="none" ng-repeat="article in articles">
-       <img ng-src="assets/images/elementary_logo.png" id="card_image" class="md-card-image" alt="Washed Out">
+     <md-card id="articles_card" flex="none" ng-repeat="article in articles">
+       <img ng-src="assets/images/yo.png" id="card_image" class="md-card-image" alt="Washed Out">
        <md-card-title>
          <md-card-title-text>
-           <span class="md-headline">{{article.title}}</span>
+           <span class="md-display-1">{{article.title}}</span>
          </md-card-title-text>
        </md-card-title>
        <md-card-content>
          {{article.intro}}
        </md-card-content>
        <md-card-actions layout="row" layout-align="end center">
-         <md-button>Read More</md-button>
+         <md-button class="md-body-1 md-primary">Read More</md-button>
        </md-card-actions>
      </md-card>
    </div>
