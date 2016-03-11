@@ -9,10 +9,11 @@ angular.module('ksinghApp', [
   'ngSanitize',
   'btford.socket-io',
   'ui.router',
+  'ngMaterial',
   'ui.bootstrap',
   'validation.match'
 ])
-  .config(function($urlRouterProvider, $locationProvider) {
+  .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider
       .otherwise('/');
 

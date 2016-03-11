@@ -6,6 +6,7 @@ angular.module('ksinghApp')
       .state('articles', {
         url: '/articles',
         templateUrl: 'app/articles/articles.html',
-        controller: 'ArticlesCtrl'
+        controller: 'ArticlesCtrl',
+        controllerAs:'articles'
       });
   });
