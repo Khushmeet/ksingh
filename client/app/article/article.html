@@ -1,1 +1,12 @@
-<div>This is the article view.</div>
+<md-toolbar class="md-warn">
+    <div class="md-toolbar-tools">
+      <h2 class="md-flex">{{article.title}}</h2>
+    </div>
+  </md-toolbar>
+  <md-content flex layout-padding>
+    <p>{{article.date}}</p>
+    <h6>{{title.intro}}</h6>
+    <p>
+      {{article.content}}
+    </p>
+  </md-content>
