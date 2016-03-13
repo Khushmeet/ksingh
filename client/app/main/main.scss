@@ -4,8 +4,8 @@
   position: fixed;
   height: 100%;
   width: 100%;
-  z-index:0;
-  background-image: url('/assets/images/mac.jpg');
+  z-index:1;
+  background-image: url('/assets/images/universe-2.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,6 +15,8 @@
 #banner h1 {
   font-size: 60px;
   line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
   letter-spacing: -1px;
 }
 
@@ -23,4 +25,12 @@
   color: #F5F5F5;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.vertical-center{
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+ min-height: 100vh; /* These two lines are counted as one :-)       */
+
+ display: flex;
+ align-items: center;
 }
