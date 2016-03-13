@@ -1,6 +1,14 @@
 #banner {
   border-bottom: none;
   margin-top: -20px;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  background-image: url('/assets/images/mac.jpg');
+  //background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
 }
 
 #banner h1 {
@@ -9,13 +17,9 @@
   letter-spacing: -1px;
 }
 
-.hero-unit {
-  position: relative;
+.landing {
   padding: 30px 15px;
   color: #F5F5F5;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  background: #9C27B0;
-  background-image: url('/assets/images/mac.jpg');
-
 }
