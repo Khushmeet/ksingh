@@ -1,10 +1,10 @@
 #banner {
-  border-bottom: none;
-  margin-top: -20px;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index:0;
+  top: auto;
+        left: auto;
+        margin: 0;
+        width: 100%;
+        position: fixed;
+    top: 0px;
   background-image: url('/assets/images/universe-2.jpg');
   background-position: center center;
   background-repeat: no-repeat;
