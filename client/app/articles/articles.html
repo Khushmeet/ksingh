@@ -18,26 +18,31 @@
 </md-content>
 
 <div class="container">
-   <article>
+   <article ng-repeat="article in articles">
       <header>
          <div class="row">
-            <h1></h1>
+            <h2 id="title">{{article.title}}</h2>
          </div>
          <div class="row">
-            <span>
-               <div></div><div></div>
+            <span class="subheader">
+               <div class="info">{{article.author}}</div>
+               <div class="info">{{article.date}}</div>
             </span>
          </div>
       </header>
       <div class="post">
          <div>
-            <img />
+            <img class="img-responsive" ng-src="/assets/images/yeoman.png"/>
          </div>
          <div>
-            <h4></h4>
-            <p></p>
+            <h4 class="intro top">{{article.intro}}</h4>
+            <p class="intro">{{article.content}}</p>
          </div>
-         <div></div>
+         <div>
+            <md-card-actions layout="row" layout-align="end center">
+              <md-button ui-sref-active="active" ui-sref="article({id:article._id})" class="md-body-1 md-primary">Read More</md-button>
+            </md-card-actions>
+         </div>
       </div>
    </article>
 </div>
