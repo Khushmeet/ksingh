@@ -1,50 +1,31 @@
-<md-content class="md-padding" layout-xs="column" layout="column" layout-fill >
-   <div flex-xs flex-gt-xs="50" layout="column" layout-align="space-between center">
-     <md-card id="articles_card" flex="none" ng-repeat="article in articles">
-       <img ng-src="assets/images/mac.jpg" id="card_image" class="md-card-image" alt="Washed Out">
-       <md-card-title>
-         <md-card-title-text>
-           <span class="md-display-1">{{article.title}}</span>
-         </md-card-title-text>
-       </md-card-title>
-       <md-card-content>
-         {{article.intro}}
-       </md-card-content>
-       <md-card-actions layout="row" layout-align="end center">
-         <md-button ui-sref-active="active" ui-sref="article({id:article._id})" class="md-body-1 md-primary">Read More</md-button>
-       </md-card-actions>
-     </md-card>
-   </div>
-</md-content>
-
-<div class="container">
-   <article ng-repeat="article in articles">
-      <header>
-         <div class="row">
-            <h2 id="title">{{article.title}}</h2>
-         </div>
-         <div class="row">
-            <span class="subheader">
+<div class="container box">
+  <article ng-repeat="article in articles">
+    <header>
+      <div class="row">
+        <h1 id="title">{{article.title}}</h1>
+      </div>
+      <div class="row subheader">
+        <span>
                <div class="info">{{article.author}}</div>
                <div class="info">{{article.date}}</div>
             </span>
-         </div>
-      </header>
-      <div class="post">
-         <div>
-            <img class="img-responsive" ng-src="/assets/images/yeoman.png"/>
-         </div>
-         <div>
-            <h4 class="intro top">{{article.intro}}</h4>
-            <p class="intro">{{article.content}}</p>
-         </div>
-         <div>
-            <md-card-actions layout="row" layout-align="end center">
-              <md-button ui-sref-active="active" ui-sref="article({id:article._id})" class="md-body-1 md-primary">Read More</md-button>
-            </md-card-actions>
-         </div>
       </div>
-   </article>
+    </header>
+    <div class="post">
+      <div>
+        <img class="img-responsive" ng-src="/assets/images/yeoman.png" />
+      </div>
+      <div>
+        <h4 class="intro top">{{article.intro}}</h4>
+        <p class="intro">{{article.content}}</p>
+      </div>
+      <div>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button ui-sref-active="active" ui-sref="article({id:article._id})" class="md-body-1 md-primary">Read More</md-button>
+        </md-card-actions>
+      </div>
+    </div>
+  </article>
 </div>
 
 <footer></footer>
