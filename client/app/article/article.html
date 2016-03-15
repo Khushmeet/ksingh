@@ -6,8 +6,6 @@
   <md-content flex layout-padding>
     <p>{{article.date}}</p>
     <h6>{{title.intro}}</h6>
-    <p>
-      {{article.content}}
-    </p>
+    <p ng-bind-html="article.content"></p>
   </md-content>
 <footer></footer>

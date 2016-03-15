@@ -1,32 +1,87 @@
 #banner {
-  top: auto;
-        left: auto;
-        margin: 0;
-        width: 100%;
-        position: fixed;
-    top: 0px;
+  border-bottom: none;
+  margin-top: -20px;
+  position: fixed;
+  margin-left: 0px;
+  height: 100%;
+  width: 100%;
   background-image: url('/assets/images/universe-2.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #464646;
 }
-
 #banner h1 {
   font-size: 60px;
   line-height: 1;
+  color: white;
   display: inline-block;
   vertical-align: middle;
   letter-spacing: -1px;
 }
+header nav{
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  margin: 40px 0;
+}
+header nav ul{
+  list-style-type: none;
+  float: right;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.menu{
+  position: absolute;
+  width: 100%;
+  right: 0;
+  margin-left: -20px;
+  z-index: 99;
+  display: block;
 
+}
+.contain{
+  margin: 0 auto;
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-width:600px ){
+    width: 300px;
+  }
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    width: 448px;
+  }
+  /* Desktops and laptops ----------- */
+  @media only screen  and (min-width : 1224px) {
+    width:804px;
+  }
+  /* Large screens ----------- */
+  @media only screen  and (min-width : 1824px) {
+    width: 1104px;
+  }
+}
+.logo{
+  position: relative;
+  float: left;
+  width: 55px;
+  height: 55px;
+}
+.menu-btn{
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+li:hover{
+  text-decoration: underline;
+}
 .landing {
   padding: 30px 15px;
   color: #F5F5F5;
   text-align: center;
+  color: white;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
-
 .vertical-center{
   min-height: 100%;
   min-height: 100vh;
