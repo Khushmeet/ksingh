@@ -1,37 +1,90 @@
-#article_card {
-  width: 25%;
-  height: 25%;
+header nav{
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  margin: 40px 0;
 }
-#title {
-  font-weight: 600;
-  font-size: 40px;
+header nav ul{
+  list-style-type: none;
+  float: right;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  display: inline-flex;
 }
-
-article {
-  margin-top: 40px;
-}
-header {
-  margin-left: 10px;
-}
-
-.box {
-  margin-top: 20px;
+.menu{
+  position: fixed;
+  width: 100%;
+  right: 0;
+  margin-left: -20px;
   z-index: 10;
+  display: block;
 }
-.subheader {
-  margin-top: -20px;
+.contain{
+  margin: 0 auto;
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-width:600px ){
+    width: 300px;
+  }
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    width: 448px;
+  }
+  /* Desktops and laptops ----------- */
+  @media only screen  and (min-width : 1224px) {
+    width:804px;
+  }
+  /* Large screens ----------- */
+  @media only screen  and (min-width : 1824px) {
+    width: 1104px;
+  }
 }
-.top {
-  margin-top: 30px;
+.logo{
+  position: relative;
+  float: left;
+  width: 55px;
+  height: 55px;
 }
-.info {
-  font-weight: 200;
-  font-size: 13px;
-  display: inline;
+.landing_alink{
+  color: white;
+  display: inline-block;
+  margin-left: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
 }
-.intro {
-  font-weight: 400;
+.landing_alink:hover{
+  color: white;
+  text-decoration: underline;
 }
-.info:nth-of-type(2) {
-  margin-left: 10px;
+#top{
+  position: absolute;
+  margin-left: 0px;
+  width: 100%;
+  background-image: url('/assets/images/haven1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#top h1 {
+  font-size: 50px;
+  line-height: 1;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: -1px;
+  margin-top: 150px;
+
+}
+.blog {
+  padding: 30px 15px;
+  color: #F5F5F5;
+  text-align: center;
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.cover{
+  min-height: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
 }
