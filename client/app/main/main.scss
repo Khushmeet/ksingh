@@ -1,11 +1,12 @@
 #banner {
-  border-bottom: none;
+  opacity: 0.9;
   margin-top: -20px;
   position: fixed;
   margin-left: 0px;
   height: 100%;
   width: 100%;
-  background-image: url('/assets/images/universe-2.jpg');
+  padding: 0px;
+  background-image: url('/assets/images/haven1.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,7 +29,8 @@ header nav ul{
   list-style-type: none;
   float: right;
   margin-bottom: 0px;
-  margin-top: 0px;
+  margin-top: 15px;
+  display: inline-flex;
 }
 .menu{
   position: absolute;
@@ -64,13 +66,13 @@ header nav ul{
   width: 55px;
   height: 55px;
 }
-.menu-btn{
+a{
   color: white;
   display: inline-block;
-  padding: 5px;
-  margin-left: 10px;
+  margin-right: 20px;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1.2em;
 }
 li:hover{
   text-decoration: underline;
