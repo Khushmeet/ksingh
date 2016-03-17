@@ -12,11 +12,11 @@ header nav ul{
   display: inline-flex;
 }
 .menu{
-  position: fixed;
+  position: absolute;
   width: 100%;
   right: 0;
   margin-left: -20px;
-  z-index: 10;
+  z-index: 1;
   display: block;
 }
 .contain{
@@ -45,7 +45,7 @@ header nav ul{
   height: 55px;
 }
 .landing_alink{
-  color: white;
+  color: rgb(25,23,37);
   display: inline-block;
   margin-left: 30px;
   text-transform: uppercase;
@@ -57,10 +57,10 @@ header nav ul{
   text-decoration: underline;
 }
 #top{
-  position: absolute;
+  position: relative;
   margin-left: 0px;
   width: 100%;
-  background-image: url('/assets/images/haven1.jpg');
+  background-image: url('/assets/images/city.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,7 +84,10 @@ header nav ul{
 }
 .cover{
   min-height: 100%;
-  min-height: 60vh;
+  min-height: 380px;
   display: flex;
   align-items: center;
+}
+section{
+  padding-top: 60px;
 }
