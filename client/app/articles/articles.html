@@ -19,6 +19,7 @@
 <div class="blog cover" id="top">
   <div class="container">
     <h1>Blog</h1>
+    <p>The place where I share my thoughts about design, code, freelancing and life.</p>
   </div>
 </div>
 <section>
@@ -30,14 +31,19 @@
         </div>
         <div class="row subheader">
           <span>
-            <p class="info" id="one_info">by {{article.author}}</p>
-            <p class="info">{{article.date}}</p>
+            <p class="info" id="one_info">by {{article.author}} | {{article.date}}</p>
+            <div id="tags">
+              <p>on</p>
+              <div ng-repeat="tag in article.tags">
+                <p>{{tag}},<span></span></p>
+              </div>
+            </div>
           </span>
         </div>
       </header>
       <div class="post">
         <div>
-          <img class="img-responsive main_post_img" ng-src="/assets/images/nuts.jpg" />
+          <img class="img-responsive main_post_img" ng-src="/assets/images/haven1.jpg" />
         </div>
         <div>
           <p class="intro top">{{article.intro}}</p>

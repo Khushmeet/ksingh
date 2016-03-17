@@ -73,7 +73,9 @@ header nav ul{
   vertical-align: middle;
   letter-spacing: -1px;
   margin-top: 150px;
-
+}
+#top p{
+  font-size: 20px;
 }
 .blog {
   padding: 30px 15px;
@@ -99,13 +101,22 @@ section{
   margin: 5px 0 20px 0;
 }
 .info{
-  display: inline-flex;
   margin-bottom: 0px;
 }
 .main_post_img{
   height: 300px;
   width:100%;
 }
-#one_info{
-  margin-right: 30px;
+.post > div{
+  margin-bottom: 30px;
+}
+#tags span{
+  padding-right: 5px;
+}
+#tags{
+  display: inline-flex;
+  margin-top: 10px;
+}
+#tags > p{
+  margin-right: 10px;
 }
