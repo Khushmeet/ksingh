@@ -60,7 +60,7 @@ header nav ul{
   position: relative;
   margin-left: 0px;
   width: 100%;
-  background-image: url('/assets/images/city.jpg');
+  background-image: url('/assets/images/haven1.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,6 +109,9 @@ section{
 }
 .post > div{
   margin-bottom: 30px;
+}
+.box{
+  //need breakpoints
 }
 #tags span{
   padding-right: 5px;
