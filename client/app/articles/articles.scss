@@ -116,10 +116,15 @@ section{
 #tags span{
   padding-right: 5px;
 }
+#tags i{
+  margin-right: 10px;
+  padding-top: 4px;
+  font-size: large;
+}
 #tags{
   display: inline-flex;
   margin-top: 10px;
 }
 #tags > p{
-  margin-right: 10px;
+  margin-right: 5px;
 }
