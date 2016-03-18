@@ -113,13 +113,16 @@ section{
 .box{
   //need breakpoints
 }
+.single_tag p{
+  padding-top:2px;
+}
 #tags span{
   padding-right: 5px;
 }
 #tags i{
   margin-right: 10px;
   padding-top: 4px;
-  font-size: large;
+  font-size: medium;
 }
 #tags{
   display: inline-flex;
