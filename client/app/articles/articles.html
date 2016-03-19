@@ -1,7 +1,7 @@
 <header class="menu">
   <div class="contain">
     <nav>
-      <img class="logo" ng-src="/assets/images/yeoman.png"/>
+      <img class="logo" ui-sref ="main" ng-src="/assets/images/yeoman.png"/>
       <ul>
         <li>
           <a class="landing_alink" title="View Articles" ui-sref-active="active" ui-sref="articles">Articles</a>
@@ -31,11 +31,11 @@
         </div>
         <div class="row subheader">
           <span>
-            <p class="info" id="one_info">by {{article.author}} | {{article.date}}</p>
+            <p class="info" id="one_info">by {{article.author}} &nbsp; | &nbsp; {{article.date}}</p>
             <div id="tags">
               <i class="fa fa-tags"></i>
               <div class="single_tag" ng-repeat="tag in article.tags">
-                <p>{{tag}}<span></span></p>
+                <p>{{tag}}&nbsp;</p>
               </div>
             </div>
           </span>

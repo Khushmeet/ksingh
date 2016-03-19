@@ -44,6 +44,9 @@ header nav ul{
   width: 55px;
   height: 55px;
 }
+.logo:hover{
+  cursor: pointer;
+}
 .landing_alink{
   color: rgb(25,23,37);
   display: inline-block;
@@ -102,6 +105,7 @@ section{
 }
 .info{
   margin-bottom: 0px;
+  color: #90A4AE;
 }
 .main_post_img{
   height: 300px;
