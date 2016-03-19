@@ -4,7 +4,7 @@
 
 class MainController {
 
-  constructor( $scope, socket) {
+  constructor( $scope,$rootScope, socket) {
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates('thing');
     });

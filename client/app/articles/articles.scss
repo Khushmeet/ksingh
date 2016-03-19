@@ -1,69 +1,8 @@
-header nav{
-  display: inline-block;
-  margin: 0 auto;
-  width: 100%;
-  margin: 40px 0;
-}
-header nav ul{
-  list-style-type: none;
-  float: right;
-  margin-bottom: 0px;
-  margin-top: 15px;
-  display: inline-flex;
-}
-.menu{
-  position: absolute;
-  width: 100%;
-  right: 0;
-  margin-left: -20px;
-  z-index: 1;
-  display: block;
-}
-.contain{
-  margin: 0 auto;
-  /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-width:600px ){
-    width: 300px;
-  }
-  /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    width: 448px;
-  }
-  /* Desktops and laptops ----------- */
-  @media only screen  and (min-width : 1224px) {
-    width:804px;
-  }
-  /* Large screens ----------- */
-  @media only screen  and (min-width : 1824px) {
-    width: 1104px;
-  }
-}
-.logo{
-  position: relative;
-  float: left;
-  width: 55px;
-  height: 55px;
-}
-.logo:hover{
-  cursor: pointer;
-}
-.landing_alink{
-  color: rgb(25,23,37);
-  display: inline-block;
-  margin-left: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-.landing_alink:hover{
-  color: white;
-  text-decoration: underline;
-}
 #top{
   position: relative;
   margin-left: 0px;
   width: 100%;
-  background-image: url('/assets/images/haven1.jpg');
+  background-image: url('/assets/images/blog-header.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,7 +10,7 @@ header nav ul{
 #top h1 {
   font-size: 50px;
   line-height: 1;
-  color: white;
+  color: rgba(0,0,0,.4);
   display: inline-block;
   vertical-align: middle;
   letter-spacing: -1px;
@@ -79,6 +18,7 @@ header nav ul{
 }
 #top p{
   font-size: 20px;
+  color: rgba(0,0,0,.4)
 }
 .blog {
   padding: 30px 15px;
@@ -119,9 +59,7 @@ section{
 }
 .single_tag p{
   padding-top:2px;
-}
-#tags span{
-  padding-right: 5px;
+  color:#90A4AE;
 }
 #tags i{
   margin-right: 10px;

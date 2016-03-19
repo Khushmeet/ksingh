@@ -44,8 +44,11 @@ header nav ul{
   width: 55px;
   height: 55px;
 }
+.logo:hover{
+  cursor: pointer;
+}
 .landing_alink{
-  color: white;
+  color: rgba(11,18,29,.4);
   display: inline-block;
   margin-left: 30px;
   text-transform: uppercase;
@@ -53,7 +56,7 @@ header nav ul{
   font-size: 1.2em;
 }
 .landing_alink:hover{
-  color: white;
+  color: rgba(11,18,29,.7);
   text-decoration: underline;
 }
 #banner{

@@ -34,7 +34,7 @@ Article.find({}).removeAsync()
       'intro':'This is the introduction to using Elementary OS. Linux distro built using ubuntu and deeper debian. This is also the first linux distro with pantheon desktop.',
       'tags': [
         'Elementary,',
-        'Linux,'
+        'Linux'
       ]
     })
     .then(() => {

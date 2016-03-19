@@ -23,7 +23,7 @@
   </div>
 </div>
 <section>
-  <div class="container box">
+  <div class="container box animated slideInUp">
     <article ng-repeat="article in articles">
       <header>
         <div class="row">
@@ -31,7 +31,7 @@
         </div>
         <div class="row subheader">
           <span>
-            <p class="info" id="one_info">by {{article.author}} &nbsp; | &nbsp; {{article.date}}</p>
+            <p class="info" id="one_info">{{article.author}} &nbsp; | &nbsp; {{article.date}}</p>
             <div id="tags">
               <i class="fa fa-tags"></i>
               <div class="single_tag" ng-repeat="tag in article.tags">
