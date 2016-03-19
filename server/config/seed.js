@@ -7,7 +7,8 @@
 import User from '../api/user/user.model';
 import Article from '../api/article/article.model';
 
-var date = new Date();
+var moment =  require('../../client/bower_components/moment/moment.js');
+
 
 Article.find({}).removeAsync()
   .then(() => {
@@ -15,7 +16,7 @@ Article.find({}).removeAsync()
       '_id': '5677bcec37407ae60754252b',
       'title': 'Using Yeoman Generator',
       'author': 'Khushmeet Singh',
-      'date': date.getDate(),
+      'date': moment().format('Do MMMM YYYY'),
       'content': '<h2>This is the article about Yeoman Generator</h2><p>This is the paragraph about using Angular-Fullstack and creating a beautiful website using MEAN Stack</p>',
       'intro':'This is the intro to Using Yeoman Generator. And how to scaffold the code.',
       'tags': [
@@ -28,7 +29,7 @@ Article.find({}).removeAsync()
       '_id': '569d2d9b9g72ae8586bdad04',
       'title': 'Using Elementary OS',
       'author': 'Khushmeet Singh',
-      'date': date.getDate(),
+      'date': moment().format('Do MMMM YYYY'),
       'content': '<h2>This is the article about Elementary OS</h2><p>This is the paragraph about using Elementary OS and about its User Interface of Pantheon Desktop environemnt</p>',
       'intro':'This is the introduction to using Elementary OS. Linux distro built using ubuntu and deeper debian. This is also the first linux distro with pantheon desktop.',
       'tags': [
