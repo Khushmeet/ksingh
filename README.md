@@ -1,4 +1,4 @@
-# ksingh
+# ksingh      ![alt text](https://travis-ci.org/Khushmeet/ksingh.svg?branch=master "travis-ci build")
 
 This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 3.3.0.
 
