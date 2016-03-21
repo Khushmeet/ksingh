@@ -8,7 +8,6 @@ var ArticleSchema = new mongoose.Schema({
   title: String,
   author: String,
   date: String,
-  imageId:Schema.ObjectId,
   alt:String,
   intro:String,
   content:String,
