@@ -4,8 +4,10 @@ var app = require('../..');
 import Article from './article.model';
 import request from 'supertest';
 
+var newArticle;
+
 describe('Article API:', function() {
-  var newArticle;
+
   describe('GET /api/articles', function() {
     var articles;
 
@@ -34,8 +36,13 @@ describe('Article API:', function() {
       request(app)
         .post('/api/articles')
         .send({
-          name: 'New Article',
-          info: 'This is the brand new article!!!'
+          title:'Test article',
+          author:'khushmeet singh',
+          date:'12 march 2016',
+          alt:'wel wel',
+          intro:'this is intro',
+          content:'this is content',
+          tags:['tag1','tag2']
         })
         .expect(201)
         .expect('Content-Type', /json/)
@@ -44,14 +51,14 @@ describe('Article API:', function() {
             return done(err);
           }
           newArticle = res.body;
-          console.log(newArticle);
           done();
         });
     });
 
     it('should respond with the newly created article', function() {
-      newArticle.title.should.equal('New Article');
-      newArticle.info.should.equal('This is the brand new article!!!');
+      newArticle.title.should.equal('Test article');
+      newArticle.author.should.equal('khushmeet singh');
+      newArticle.alt.should.equal('wel wel');
     });
 
   });
@@ -78,8 +85,9 @@ describe('Article API:', function() {
     });
 
     it('should respond with the requested article', function() {
-      article.name.should.equal('New Article');
-      article.info.should.equal('This is the brand new article!!!');
+      article.title.should.equal('Test article');
+      article.author.should.equal('khushmeet singh');
+      article.alt.should.equal('wel wel');
     });
 
   });
@@ -91,8 +99,7 @@ describe('Article API:', function() {
       request(app)
         .put('/api/articles/' + newArticle._id)
         .send({
-          name: 'Updated Article',
-          info: 'This is the updated article!!!'
+          title:'Test article 2',
         })
         .expect(200)
         .expect('Content-Type', /json/)
@@ -110,8 +117,9 @@ describe('Article API:', function() {
     });
 
     it('should respond with the updated article', function() {
-      updatedArticle.name.should.equal('Updated Article');
-      updatedArticle.info.should.equal('This is the updated article!!!');
+      updatedArticle.title.should.equal('Test article 2');
+      updatedArticle.author.should.equal('khushmeet singh');
+      updatedArticle.alt.should.equal('wel wel');
     });
 
   });
