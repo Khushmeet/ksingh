@@ -1,5 +1,9 @@
+#about-header{
+  background: linear-gradient(135deg, #fafafa 0, #f2f2f2 60%, #eaeaea 100%);
+}
 .about{
   display: block;
+  background: linear-gradient(135deg, #fafafa 0, #f2f2f2 60%, #eaeaea 100%);
 
   .profile-section{
     padding: 140px 0px 0px 0px;
@@ -31,6 +35,7 @@
 }
 .listing{
   padding: 0 25% 0 25%;
+  margin-bottom: 20px;
 }
 .me{
   display: inline-flex;
