@@ -1,6 +1,7 @@
 'use strict';
 
 var app = require('../..');
+import Article from './article.model';
 import request from 'supertest';
 
 var newArticle;
@@ -50,7 +51,7 @@ describe('Article API:', function() {
     });
 
     it('should respond with the newly created article', function() {
-      newArticle.name.should.equal('New Article');
+      newArticle.title.should.equal('New Article');
       newArticle.info.should.equal('This is the brand new article!!!');
     });
 
