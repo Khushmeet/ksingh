@@ -2,7 +2,8 @@
   position: relative;
   margin-left: 0px;
   width: 100%;
-  background-image: url('/assets/images/blog-header.jpg');
+  //background-image: url('/assets/images/blog-header.jpg');
+  background-color: #0b121d;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,7 +11,7 @@
 #top h1 {
   font-size: 50px;
   line-height: 1;
-  color: rgba(0,0,0,.4);
+  color: white;
   display: inline-block;
   vertical-align: middle;
   letter-spacing: -1px;
@@ -18,7 +19,7 @@
 }
 #top p{
   font-size: 20px;
-  color: rgba(0,0,0,.4)
+  color: white;
 }
 .blog {
   padding: 30px 15px;
@@ -32,9 +33,11 @@
   min-height: 380px;
   display: flex;
   align-items: center;
+  background-color: rgba(11,18,29,.7);
 }
 section{
-  padding-top: 60px;
+  padding-top: 50px;
+  background: linear-gradient(135deg,#fafafa 0,#f2f2f2 60%,#eaeaea 100%);
 }
 .row{
   margin-left: 0px;

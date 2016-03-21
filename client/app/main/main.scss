@@ -48,7 +48,7 @@ header nav ul{
   cursor: pointer;
 }
 .landing_alink{
-  color: rgba(11,18,29,.4);
+  color: white;
   display: inline-block;
   margin-left: 30px;
   text-transform: uppercase;
@@ -56,7 +56,7 @@ header nav ul{
   font-size: 1.2em;
 }
 .landing_alink:hover{
-  color: rgba(11,18,29,.7);
+  color: white;
   text-decoration: underline;
 }
 #banner{
@@ -65,7 +65,8 @@ header nav ul{
   height: 100%;
   width: 100%;
   padding: 0px;
-  background-image: url('/assets/images/haven1.jpg');
+  //background-image: url('/assets/images/haven1.jpg');
+  background-color: #0b121d;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
