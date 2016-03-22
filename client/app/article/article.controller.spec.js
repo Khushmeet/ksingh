@@ -3,9 +3,9 @@
 describe('Controller: ArticleCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('ksinghApp'));
-
-  var ArticleCtrl, scope;
+  beforeEach(module('ksinghApp'));{
+    var ArticleCtrl, scope;
+  }
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
