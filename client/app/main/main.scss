@@ -21,21 +21,19 @@ header nav > ul{
 }
 .contain{
   margin: 0 auto;
-  /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-width:600px ){
-    width: 300px;
+  /* Extra small devices (phones, less than 768px) */
+  /* No media query since this is the default in Bootstrap */
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    width: 640px;
   }
-  /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    width: 448px;
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    width: 740px;
   }
-  /* Desktops and laptops ----------- */
-  @media only screen  and (min-width : 1224px) {
-    width:804px;
-  }
-  /* Large screens ----------- */
-  @media only screen  and (min-width : 1824px) {
-    width: 1104px;
+  /* Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    width: 900px;
   }
 }
 .logo{
