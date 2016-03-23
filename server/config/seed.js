@@ -6,7 +6,6 @@
 'use strict';
 import User from '../api/user/user.model';
 import Article from '../api/article/article.model';
-import Tag from '../api/tag/tag.model';
 
 var moment =  require('../../client/bower_components/moment/moment.js');
 
@@ -40,16 +39,6 @@ Article.find({}).removeAsync()
     })
     .then(() => {
       console.log('finished populating articles');
-    });
-  });
-
-Tag.find({}).removeAsync()
-  .then(()=>{
-    Tag.createAsync({
-      'tags':['Angular.js','Node.js','Python','Android','Linux','Elementary OS']
-    })
-    .then(()=>{
-      console.log('finished populating tags');
     });
   });
 

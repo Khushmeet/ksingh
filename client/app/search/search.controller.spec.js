@@ -1,16 +1,16 @@
 'use strict';
 
-describe('Controller: TagsCtrl', function () {
+describe('Controller: SearchCtrl', function () {
 
   // load the controller's module
   beforeEach(module('ksinghApp'));
 
-  var TagsCtrl, scope;
+  var SearchCtrl, scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    TagsCtrl = $controller('TagsCtrl', {
+    SearchCtrl = $controller('SearchCtrl', {
       $scope: scope
     });
   }));

@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('ksinghApp')
-  .controller('TagsCtrl', function ($scope) {
+  .controller('SearchCtrl', function ($scope) {
     $scope.message = 'Hello';
   });

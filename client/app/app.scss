@@ -17,14 +17,13 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
   font-family: 'Inconsolata' ;
 }
 
-// Component styles are injected through grunt
+// Component styles are injected through gulp
 // injector
 @import 'about/about';
 @import 'admin/admin';
 @import 'article/article';
 @import 'articles/articles';
 @import 'main/main';
-@import 'tags/tags';
 @import '../components/footer/footer';
 @import '../components/modal/modal';
 // endinjector
