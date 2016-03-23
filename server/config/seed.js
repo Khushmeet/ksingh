@@ -47,6 +47,9 @@ Tag.find({}).removeAsync()
   .then(()=>{
     Tag.createAsync({
       'tags':['Angular.js','Node.js','Python','Android','Linux','Elementary OS']
+    })
+    .then(()=>{
+      console.log('finished populating tags');
     });
   });
 
