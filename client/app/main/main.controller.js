@@ -11,8 +11,8 @@ class MainController {
 
     tagService.get({},
       function success(response){
-        console.log(response);
-        $scope.tags = response;
+        console.log(response[0]);
+        $scope.tags = response[0];
       },
       function error(error){
         console.log(error);
