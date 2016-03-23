@@ -1,1 +1,62 @@
-<div>This is the search view.</div>
+<header class="menu">
+  <div class="contain">
+    <nav>
+      <a ui-sref-active="active" ui-sref="main"><img class="logo" ng-src="/assets/images/yeoman.png"/></a>
+      <ul>
+        <li>
+          <a class="landing_alink" style="color:rgba(11,18,29,.7);" title="View Articles" ui-sref-active="active" ui-sref="articles">Articles</a>
+        </li>
+        <li>
+          <a class="landing_alink" style="color:rgba(11,18,29,.7);" title="View Articles" ui-sref-active="active" ui-sref="about">About</a>
+        </li>
+        <li>
+          <a class="landing_alink" style="color:rgba(11,18,29,.7);" title="View Articles" ui-sref-active="active" ui-sref="search"><i class="fa fa-search"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="about">
+  <article class="container profile-section">
+    <div class="container text-center surround">
+      <form name="searchForm">
+          <md-input-container md-no-float class="md-block">
+            <input ng-model="searchText" placeholder="Search" name="search">
+          </md-input-container>
+      </form>
+    </div>
+    <div class="container box animated slideInUp">
+      <article ng-repeat="article in articles">
+        <header>
+          <div class="row">
+            <h1 id="title">{{article.title}}</h1>
+          </div>
+          <div class="row subheader">
+            <span>
+              <p class="info" id="one_info">{{article.author}} &nbsp; | &nbsp; {{article.date}}</p>
+              <div id="tags">
+                <i class="fa fa-tags"></i>
+                <div class="single_tag" ng-repeat="tag in article.tags">
+                  <p>{{tag}}&nbsp;</p>
+                </div>
+              </div>
+            </span>
+          </div>
+        </header>
+        <div class="post">
+          <div>
+            <img class="img-responsive main_post_img" ng-src="/assets/images/lights.jpg" />
+          </div>
+          <div>
+            <h4 class="intro top">{{article.intro}}</h4>
+          </div>
+          <div>
+            <md-card-actions layout="row" layout-align="end center">
+              <md-button ui-sref-active="active" ui-sref="article({id:article._id})" class="md-body-1 md-primary">Read More</md-button>
+            </md-card-actions>
+          </div>
+        </div>
+      </article>
+    </div>
+  </article>
+</div>

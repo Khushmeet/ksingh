@@ -10,6 +10,7 @@ angular.module('ksinghApp', [
   'btford.socket-io',
   'ui.router',
   'ngMaterial',
+  'ngMessages',
   'ui.bootstrap',
   'validation.match'
 ])
