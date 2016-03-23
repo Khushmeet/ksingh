@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('ksinghApp')
-  .factory('searchService',function($resource,$scope){
-    return $resource('/api/articles',{tags:[]},{
+  .factory('searchService',function($resource){
+    return $resource('/api/articles',{},{
       get:{
         method:'GET',
         isArray:true
