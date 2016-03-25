@@ -13,7 +13,6 @@ var moment =  require('../../client/bower_components/moment/moment.js');
 Article.find({}).removeAsync()
   .then(() => {
     Article.createAsync({
-      '_id': '5677bcec37407ae60754252b',
       'title': 'Using Yeoman Generator',
       'author': 'Khushmeet Singh',
       'date': moment().format('Do MMMM YYYY'),
@@ -26,7 +25,6 @@ Article.find({}).removeAsync()
         'website'
       ]
     }, {
-      '_id': '569d2d9b9g72ae8586bdad04',
       'title': 'Using Elementary OS',
       'author': 'Khushmeet Singh',
       'date': moment().format('Do MMMM YYYY'),

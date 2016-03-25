@@ -68,7 +68,15 @@ export function index(req, res) {
 
 // Gets a single Article from the DB
 export function show(req, res) {
-  Article.findByIdAsync(req.params.id)
+    Article.findByIdAsync(req.params.id)
+      .then(handleEntityNotFound(res))
+      .then(respondWithResult(res))
+      .catch(handleError(res));
+}
+
+//Gets a list of Articles from the DB for given query
+export function find(req,res){
+  Article.findAsync({tags:req.params.tag})
     .then(handleEntityNotFound(res))
     .then(respondWithResult(res))
     .catch(handleError(res));
@@ -98,12 +106,5 @@ export function destroy(req, res) {
   Article.findByIdAsync(req.params.id)
     .then(handleEntityNotFound(res))
     .then(removeEntity(res))
-    .catch(handleError(res));
-}
-
-export function find(req,res) {
-  Article.findAsync({tags:req.body})
-    .then(handleEntityNotFound(res))
-    .then(respondWithResult(res))
     .catch(handleError(res));
 }
