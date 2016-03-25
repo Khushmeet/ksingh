@@ -18,15 +18,21 @@
 </header>
 <div class="about">
   <article class="container profile-section">
-    <div class="container text-center surround">
-      <form name="searchForm">
+    <div class="container text-center surround" style="margin-top:50px;">
+      <form name="searchForm" novalidate>
           <md-input-container md-no-float class="md-block">
-            <input ng-model="searchText" placeholder="Search">
+            <input ng-model="searchText" placeholder="Search" required>
           </md-input-container>
+          <md-button ng-click="search(searchForm,searchText)" type="submit">Do it</md-button>
       </form>
     </div>
-    <div class="container box animated slideInUp">
-      <article ng-repeat="article in articles">
+    <div ng-if="!show" class="container-fluid notshow">
+      <div class="row">
+        <p>Go on search for something!</p>
+      </div>
+    </div>
+    <div ng-if="show" class="container box animated slideInUp">
+      <article ng-repeat="article in list">
         <header>
           <div class="row">
             <h1 id="title">{{article.title}}</h1>
@@ -60,3 +66,4 @@
     </div>
   </article>
 </div>
+<footer></footer>
