@@ -1,7 +1,7 @@
 <header class="menu">
   <div class="contain">
     <nav>
-      <a ui-sref-active="active" ui-sref="main"><img class="logo" ng-src="/assets/images/yeoman.png"/></a>
+      <a ui-sref-active="active" ui-sref="main"><img class="logo" ng-src="/assets/images/yeoman.png" /></a>
       <ul>
         <li>
           <a class="landing_alink" style="color:rgba(11,18,29,.7);" title="View Articles" ui-sref-active="active" ui-sref="articles">Articles</a>
@@ -20,10 +20,14 @@
   <article class="container profile-section">
     <div class="container text-center surround" style="margin-top:50px;">
       <form name="searchForm" novalidate>
-          <md-input-container md-no-float class="md-block">
-            <input ng-model="searchText" placeholder="Search" required>
-          </md-input-container>
-          <md-button ng-click="search(searchForm,searchText)" type="submit">Do it</md-button>
+        <md-input-container md-no-float class="md-block">
+          <md-icon class="fa fa-search"></md-icon>
+          <input ng-model="searchText" name="search" ng-minlength="1" placeholder="Search" required>
+          <div ng-messages="searchForm.name.$error">
+            <p ng-message="required">Your name is required.</p>
+          </div>
+        </md-input-container>
+        <md-button ng-click="search(searchForm,searchText)" type="submit">Do it</md-button>
       </form>
     </div>
     <div ng-if="!show" class="container-fluid notshow">
