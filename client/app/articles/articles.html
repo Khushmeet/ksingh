@@ -1,21 +1,4 @@
-<header class="menu">
-  <div class="contain">
-    <nav>
-      <a ui-sref-active="active" ui-sref="main"><img class="logo" ng-src="/assets/images/yeoman.png"/></a>
-      <ul>
-        <li>
-          <a class="landing_alink" title="View Articles" ui-sref-active="active" ui-sref="articles">Articles</a>
-        </li>
-        <li>
-          <a class="landing_alink" title="View Articles" ui-sref-active="active" ui-sref="about">About</a>
-        </li>
-        <li>
-          <a class="landing_alink" title="View Articles" ui-sref-active="active" ui-sref="search"><i class="fa fa-search"></i></a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<navbar></navbar>
 <div class="blog cover" id="top">
   <div class="container">
     <h1>Blog</h1>
@@ -23,7 +6,7 @@
   </div>
 </div>
 <section>
-  <div class="container box animated slideInUp">
+  <div class="container box animated slideInUp" style="width:800px;">
     <article ng-repeat="article in articles">
       <header>
         <div class="row">
