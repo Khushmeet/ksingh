@@ -11,12 +11,24 @@
     .surround{
       padding: 0 25% 0 25%;
       margin-bottom: 30px;
-
+      //mobile
+      @media only screen and (min-width : 120px) and (max-device-width : 480px)  {
+        padding: 0 10% 0 10%;
+      }
       .border{
         border-bottom: 1px solid #eee;
-
+        h1{
+          //mobile
+          @media only screen and (min-width : 120px) and (max-device-width : 480px)  {
+            font-size: 1.6em;
+          }
+        }
         h4{
           padding-bottom: 20px;
+          //mobile
+          @media only screen and (min-width : 120px) and (max-device-width : 480px)  {
+            font-size: 1em;
+          }
         }
       }
     }
